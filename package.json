@@ -9,11 +9,14 @@
   "devDependencies": {
     "git-scripts": "^0.4.3",
     "htmlhint": "^0.14.1",
-    "prettier": "^2.0.5",
+    "prettier": "^2.2.0",
+    "sass": "^1.29.0",
     "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
     "surge": "^0.21.6"
   },
   "repository": "https://github.com/AlexandrKoliukh/layout-designer-project-lvl2.git",

@@ -14,25 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40f265c5-631b-4fe7-b500-7921692c37e7" name="Default Changelist" comment="init project">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/layout-designer-project-lvl2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.surgeignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintrc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,12 +58,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v14.15.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettier.files.pattern" value="{**/*,*}.{html, scss}" />
+    <property name="prettier.files.pattern" value="{**/*,*}.{html,scss,css}" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v14.15.1/bin/node" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.webOptions" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -113,7 +105,7 @@
       <workItem from="1598084775765" duration="4181000" />
       <workItem from="1598107902481" duration="1693000" />
       <workItem from="1606404257607" duration="234000" />
-      <workItem from="1606463438589" duration="397000" />
+      <workItem from="1606463438589" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1598086114796</created>
@@ -122,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598086114796</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init project">
+      <created>1606464265584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606464265584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,14 +225,14 @@
     </state>
     <state width="798" height="261" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873070" />
     <state width="798" height="261" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760266" />
-    <state x="349" y="183" key="SettingsEditor" timestamp="1598109060428">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1598108401559" />
-    <state x="349" y="183" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1598109060428" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1598086118183">
+    <state x="349" y="164" key="SettingsEditor" timestamp="1606465707978">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1598086118183" />
+    <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1606465707978" />
+    <state x="349" y="183" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1598109060428" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1606464267537">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1606464267537" />
   </component>
 </project>

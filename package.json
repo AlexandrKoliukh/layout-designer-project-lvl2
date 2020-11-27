@@ -7,7 +7,9 @@
     "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
+    "git-scripts": "^0.4.3",
     "htmlhint": "^0.14.1",
+    "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
@@ -16,5 +18,10 @@
   },
   "repository": "https://github.com/AlexandrKoliukh/layout-designer-project-lvl2.git",
   "author": "Alexandr Koliukh",
-  "license": "ISC"
+  "license": "ISC",
+  "git": {
+    "scripts": {
+      "pre-push": "make deploy"
+    }
+  }
 }

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40f265c5-631b-4fe7-b500-7921692c37e7" name="Default Changelist" comment="init project">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/layout-designer-project-lvl2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.surgeignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gRkQKZV3f7Ki0v227LUkUDzUuw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettier.files.pattern" value="{**/*,*}.{html, scss}" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="catalog.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/layout-designer-project-lvl2/src/catalog.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" uri="http://localhost:63342/layout-designer-project-lvl2/src/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.catalog.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.catalog.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40f265c5-631b-4fe7-b500-7921692c37e7" name="Default Changelist" comment="" />
+      <created>1598084774593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598084774593</updated>
+      <workItem from="1598084775765" duration="4181000" />
+      <workItem from="1598107902481" duration="1693000" />
+      <workItem from="1606404257607" duration="234000" />
+      <workItem from="1606463438589" duration="397000" />
+    </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1598086114796</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598086114796</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1057" y="51" key="#HTML" timestamp="1598109023379">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="1057" y="51" key="#HTML/0.23.1680.1027@0.23.1680.1027" timestamp="1598109023379" />
+    <state x="304" y="206" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598108473997">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1598108305599" />
+    <state x="304" y="206" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1598108473997" />
+    <state x="627" y="237" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1598092223263">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="627" y="237" key="#com.intellij.ide.macro.MacrosDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1598092223263" />
+    <state x="494" y="310" width="691" height="665" key="EditFileWatcherDialog" timestamp="1598107953266">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="494" y="310" width="691" height="665" key="EditFileWatcherDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1598107953266" />
+    <state x="545" y="452" width="640" height="146" key="GitCloneDialog" timestamp="1598084921645">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="545" y="452" width="640" height="146" key="GitCloneDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1598084921645" />
+    <state width="798" height="261" key="GridCell.Tab.0.bottom" timestamp="1598112873067">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873067" />
+    <state width="798" height="261" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760264" />
+    <state width="798" height="261" key="GridCell.Tab.0.center" timestamp="1598112873066">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873066" />
+    <state width="798" height="261" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760263" />
+    <state width="798" height="261" key="GridCell.Tab.0.left" timestamp="1598112873065">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873065" />
+    <state width="798" height="261" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760263" />
+    <state width="798" height="261" key="GridCell.Tab.0.right" timestamp="1598112873066">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873066" />
+    <state width="798" height="261" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760264" />
+    <state width="798" height="261" key="GridCell.Tab.1.bottom" timestamp="1598112873069">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873069" />
+    <state width="798" height="261" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760265" />
+    <state width="798" height="261" key="GridCell.Tab.1.center" timestamp="1598112873068">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873068" />
+    <state width="798" height="261" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760264" />
+    <state width="798" height="261" key="GridCell.Tab.1.left" timestamp="1598112873067">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873067" />
+    <state width="798" height="261" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760264" />
+    <state width="798" height="261" key="GridCell.Tab.1.right" timestamp="1598112873068">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873068" />
+    <state width="798" height="261" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760265" />
+    <state width="798" height="261" key="GridCell.Tab.2.bottom" timestamp="1598112873070">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873070" />
+    <state width="798" height="261" key="GridCell.Tab.2.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760266" />
+    <state width="798" height="261" key="GridCell.Tab.2.center" timestamp="1598112873069">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873069" />
+    <state width="798" height="261" key="GridCell.Tab.2.center/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760265" />
+    <state width="798" height="261" key="GridCell.Tab.2.left" timestamp="1598112873069">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873069" />
+    <state width="798" height="261" key="GridCell.Tab.2.left/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760265" />
+    <state width="798" height="261" key="GridCell.Tab.2.right" timestamp="1598112873070">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="798" height="261" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1598112873070" />
+    <state width="798" height="261" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1598108760266" />
+    <state x="349" y="183" key="SettingsEditor" timestamp="1598109060428">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1598108401559" />
+    <state x="349" y="183" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1598109060428" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1598086118183">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1598086118183" />
+  </component>
+</project>

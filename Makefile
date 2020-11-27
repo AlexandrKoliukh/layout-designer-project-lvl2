@@ -6,4 +6,10 @@ lint:
 	npx htmlhint ./src/*.html
 
 deploy:
-	npx surge ./src/
+	npx surge --project ./src/ --domain  alk-music-box.surge.sh
+
+sass:
+	sass ./src/styles/scss/app.scss ./src/styles/style.css
+
+sass-watch:
+	sass --watch ./src/styles/scss/app.scss:./src/styles/style.css

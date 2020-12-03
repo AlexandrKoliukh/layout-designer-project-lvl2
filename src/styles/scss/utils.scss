@@ -1,0 +1,32 @@
+@function px-to-rem($list) {
+  $result: ();
+
+  @each $value in $list {
+    $result: append($result, (($value / $rem-base) * 1rem));
+  }
+
+  @return #{$result};
+}
+
+@mixin media($type) {
+  @media screen and (max-width: map-get($breakpoints, $type)) {
+    @content;
+  }
+}
+
+@mixin typography(
+  $font-size,
+  $line-height: $font-size,
+  $font-weight: inherit,
+  $text-transform: inherit
+) {
+  font-weight: $font-weight;
+  font-size: px-to-rem($font-size);
+  line-height: px-to-rem($line-height);
+  text-transform: $text-transform;
+}
+
+@mixin bg-image($image) {
+  background: url("../images/#{$image}.png") no-repeat center;
+  background-size: cover;
+}

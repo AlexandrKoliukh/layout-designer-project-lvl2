@@ -1,0 +1,165 @@
+.banner-1 {
+  @include bg-image("banner");
+
+  height: 100vh;
+
+  .form-describe {
+    @include typography(18px);
+
+    margin: 45px 0 40px;
+  }
+
+  form {
+    grid-template-columns: repeat(2, minmax(100px, 270px));
+    gap: 30px;
+
+    button {
+      @include typography(14px, 14px, normal, uppercase);
+
+      padding: 20px 0;
+    }
+  }
+}
+
+.subscribe-cards-container {
+  margin: 75px 0 50px;
+
+  column-gap: 30px;
+  row-gap: 50px;
+
+  .subscribe-card {
+    width: 352px;
+    height: 580px;
+
+    padding: 25px 25px 60px;
+
+    h3 {
+      @include typography(24px, 28px, normal, uppercase);
+      @extend .text-center;
+    }
+
+    button {
+      @include typography(24px, 28px, normal, uppercase);
+
+      margin: 50px 0;
+
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .price {
+      @extend .d-flex;
+      @extend .justify-content-center;
+      @extend .text-uppercase;
+
+      align-items: flex-start;
+
+      span:first-child {
+        @include typography(60px, 70px);
+
+        margin-right: 11px;
+      }
+
+      span:last-child {
+        @include typography(30px, 35px);
+      }
+    }
+
+    .card-description {
+      @include typography(11px, 13px);
+      @extend .text-center;
+    }
+
+    &.card-free {
+      @include bg-image("subscribe-1");
+    }
+
+    &.card-standard {
+      @include bg-image("subscribe-2");
+    }
+
+    &.card-premium {
+      @include bg-image("subscribe-3");
+    }
+
+    @include media(md) {
+      width: 280px;
+      height: 464px;
+
+      padding: 20px;
+
+      button {
+        @include typography(12px, 14px, 400, uppercase);
+        margin: 30px 0 40px;
+      }
+    }
+  }
+}
+
+.subscribe-section-description {
+  @include typography(22px);
+
+  @include media(sm) {
+    @include typography(12px);
+  }
+}
+
+.article-news {
+  column-gap: 30px;
+
+  h3 {
+    @include typography(30px, 35px, 400);
+    margin-bottom: 25px;
+  }
+
+  .article-text {
+    @include typography(14px, 28px, 400);
+
+    p {
+      @extend .text-secondary;
+    }
+
+    footer {
+      margin-top: 16px;
+      margin-bottom: 50px;
+
+      img {
+        margin-right: 22px;
+      }
+
+      .author-name {
+        @include typography(12px, 28px, normal, uppercase);
+      }
+    }
+  }
+
+  button {
+    @include typography(12px, 28px, 700, uppercase);
+
+    width: 130px;
+  }
+}
+
+.md-article-column {
+  @include media(md) {
+    flex-direction: column !important;
+    row-gap: 20px;
+
+    &:nth-child(2n + 1) {
+      flex-direction: column-reverse !important;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    button {
+      width: auto !important;
+    }
+  }
+}
+
+.app-download.btn {
+  @include typography(14px, 16px, normal, none);
+  width: 175px;
+  padding: 20px 58px;
+}

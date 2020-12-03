@@ -1,0 +1,31 @@
+.main-footer {
+  padding: 80px 0 50px;
+
+  color: $gray-light;
+
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+
+  & > div {
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+
+  section {
+    h4 {
+      @include typography(18px, 21px, 700);
+
+      margin-bottom: 30px;
+    }
+
+    ul li {
+      @include typography(16px, 19px, 400);
+
+      margin-bottom: 20px;
+    }
+  }
+
+  div:last-child ul {
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+}

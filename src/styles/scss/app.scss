@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "variables";
-@import "/node_modules/typeface-roboto/index.css";
-
-.nav-main {
-  & > a {
-    text-transform: uppercase;
-  }
-}
+@import "utils";
+@import "default";
+@import "common/styles";
+@import "main/styles";
+@import "atomic";

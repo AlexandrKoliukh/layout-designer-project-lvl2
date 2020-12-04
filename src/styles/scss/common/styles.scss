@@ -12,7 +12,7 @@
   @include typography(30px, 35px, 700);
 
   @include media(md) {
-    @include typography(18px, 21px);
+    @include typography(18px, 21px, 700);
   }
 }
 
@@ -38,5 +38,23 @@
 
   img {
     margin-right: 15px;
+  }
+}
+
+.sm-font-12 {
+  @include media(sm) {
+    @include typography(12px, 14px);
+  }
+}
+
+.sm-font-14 {
+  @include media(sm) {
+    @include typography(14px, 16px);
+  }
+}
+
+.sm-flex-column {
+  @include media(sm) {
+    flex-direction: column;
   }
 }

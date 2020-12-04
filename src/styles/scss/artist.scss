@@ -1,5 +1,7 @@
 .banner-artist {
-  @include bg-image("morten-harket");
+  @include bg-image("morten-harket") {
+    background-position: 70% 0;
+  }
   height: 550px;
 
   .container {
@@ -32,6 +34,61 @@
       &:first-child {
         margin-right: 0;
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.song-cards-container {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 60px;
+  row-gap: 25px;
+
+  .song-card {
+    @include typography(14px, 16px);
+
+    img {
+      margin-right: 16px;
+    }
+    .author-name {
+      @include typography(12px, 14px);
+      margin-top: 5px;
+    }
+  }
+
+  @include media(md) {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.media-item-group {
+  .media-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 250px;
+
+    .item-title {
+      @include typography(20px, 23px, 700);
+      padding: 10px 0;
+    }
+  }
+
+  @include media(md) {
+    justify-content: space-around;
+    .media-item {
+      max-width: 130px;
+
+      img {
+        height: 130px;
+      }
+
+      .item-title {
+        @include typography(16px, 18px, 700);
       }
     }
   }

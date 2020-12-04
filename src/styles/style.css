@@ -83,6 +83,10 @@ h2 {
 }
 
 .main-header {
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  text-transform: inherit;
   position: fixed;
   top: 15px;
   right: 0;
@@ -189,7 +193,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .h1-subtitle {
-    font-weight: inherit;
+    font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.3125rem;
     text-transform: inherit;
@@ -204,6 +208,30 @@ h2 {
 
 .btn-icon img {
   margin-right: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  .sm-font-12 {
+    font-weight: inherit;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    text-transform: inherit;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sm-font-14 {
+    font-weight: inherit;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-transform: inherit;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sm-flex-column {
+    flex-direction: column;
+  }
 }
 
 .banner-main {
@@ -383,6 +411,7 @@ h2 {
 .banner-artist {
   background: url("../images/morten-harket.png") no-repeat center;
   background-size: cover;
+  background-position: 70% 0;
   height: 550px;
 }
 .banner-artist .container {
@@ -414,6 +443,66 @@ h2 {
   .banner-artist button:first-child {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+.song-cards-container {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  row-gap: 25px;
+}
+.song-cards-container .song-card {
+  font-weight: inherit;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  text-transform: inherit;
+}
+.song-cards-container .song-card img {
+  margin-right: 16px;
+}
+.song-cards-container .song-card .author-name {
+  font-weight: inherit;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-transform: inherit;
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .song-cards-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.media-item-group .media-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+}
+.media-item-group .media-item .item-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  text-transform: inherit;
+  padding: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .media-item-group {
+    justify-content: space-around;
+  }
+  .media-item-group .media-item {
+    max-width: 130px;
+  }
+  .media-item-group .media-item img {
+    height: 130px;
+  }
+  .media-item-group .media-item .item-title {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    text-transform: inherit;
   }
 }
 
@@ -629,10 +718,8 @@ h2 {
   border: none;
 }
 
-@media screen and (max-width: 425px) {
-  .sm-flex-column {
-    flex-direction: column;
-  }
+.gap-50 {
+  gap: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -210,8 +210,6 @@
   border: none;
 }
 
-.sm-flex-column {
-  @include media(sm) {
-    flex-direction: column;
-  }
+.gap-50 {
+  gap: 50px;
 }

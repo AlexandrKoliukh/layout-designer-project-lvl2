@@ -1,5 +1,5 @@
 # Name of workflow
-name: LayoutDesigner CI
+name: Code style CI
 
 # Trigger the workflow on push or pull request
 on:

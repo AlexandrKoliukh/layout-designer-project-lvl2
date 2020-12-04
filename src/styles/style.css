@@ -202,23 +202,27 @@ h2 {
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.banner-1 {
+.btn-icon img {
+  margin-right: 15px;
+}
+
+.banner-main {
   background: url("../images/banner.png") no-repeat center;
   background-size: cover;
   height: 100vh;
 }
-.banner-1 .form-describe {
+.banner-main .form-describe {
   font-weight: inherit;
   font-size: 1.125rem;
   line-height: 1.125rem;
   text-transform: inherit;
   margin: 45px 0 40px;
 }
-.banner-1 form {
+.banner-main form {
   grid-template-columns: repeat(2, minmax(100px, 270px));
   gap: 30px;
 }
-.banner-1 form button {
+.banner-main form button {
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 0.875rem;
@@ -376,7 +380,44 @@ h2 {
   padding: 20px 58px;
 }
 
-.d-flex, .subscribe-cards-container .subscribe-card .price {
+.banner-artist {
+  background: url("../images/morten-harket.png") no-repeat center;
+  background-size: cover;
+  height: 550px;
+}
+.banner-artist .container {
+  padding-top: 280px;
+}
+.banner-artist p {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  text-transform: inherit;
+  margin: 25px 0 40px;
+}
+.banner-artist button {
+  width: 200px;
+  padding-left: 20px;
+}
+.banner-artist button:first-child {
+  margin-right: 35px;
+}
+@media screen and (max-width: 768px) {
+  .banner-artist {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner-artist button {
+    width: auto;
+  }
+  .banner-artist button:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.d-flex, .btn-icon, .subscribe-cards-container .subscribe-card .price {
   display: flex;
 }
 
@@ -460,7 +501,7 @@ h2 {
   justify-content: space-around;
 }
 
-.align-items-center {
+.align-items-center, .btn-icon {
   align-items: center;
 }
 
@@ -550,6 +591,14 @@ h2 {
 
 .bg-red {
   background-color: #ff4157;
+}
+
+.bg-purple {
+  background-color: #5328a1;
+}
+
+.bg-brown {
+  background-color: #95390c;
 }
 
 .border-white, .btn {

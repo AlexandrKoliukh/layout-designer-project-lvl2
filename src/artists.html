@@ -8,5 +8,141 @@
 
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
   </head>
-  <body></body>
+  <body class="text-primary">
+    <header
+      class="main-header container d-flex text-secondary align-items-center"
+    >
+      <label class="burger-btn cursor-pointer" for="burger">
+        <img
+          src="images/burger.svg"
+          title="burger(not hamburger)"
+          alt="menu"
+          width="30"
+          height="30"
+        />
+      </label>
+      <input type="checkbox" hidden="hidden" id="burger" />
+      <nav class="text-uppercase w-100">
+        <div
+          class="logo-main d-flex align-items-center text-primary text-uppercase"
+        >
+          <img src="images/logo.svg" alt="logo" width="20" height="20" />
+          <a href="index.html">music box</a>
+        </div>
+        <ul class="d-flex flex-wrap w-100">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>Каталог</li>
+          <li><a href="artists.html" class="text-primary">Исполнители</a></li>
+          <li>Контакты</li>
+        </ul>
+        <input type="search" placeholder="поиск.." />
+      </nav>
+    </header>
+
+    <section class="banner-artist">
+      <div class="container">
+        <h1>Morten Harket</h1>
+        <p>24 875 поклонников</p>
+        <div class="d-flex sm-flex-column">
+          <button class="btn btn-icon bg-purple border-none border-radius-5">
+            <img src="images/play-button.svg" alt="play" height="16" />
+            Микс
+          </button>
+          <button class="btn btn-icon bg-brown border-none border-radius-5">
+            <img src="images/heart.svg" alt="heart" height="16" />
+            В избранное
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main class="bg-black">
+      <section class="pt-100 container">
+        <h2>Популярные треки</h2>
+      </section>
+      <section class="pt-100 container">
+        <h2>Дискография</h2>
+      </section>
+      <section class="pt-100 container">
+        <h2>Похожие исполнители</h2>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container d-flex justify-content-between pb-100 flex-wrap">
+        <section>
+          <h4>О нас</h4>
+          <ul>
+            <li><a href="#">История компании</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Особенности</a></li>
+            <li><a href="#">Пресса</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Поддержка</h4>
+          <ul>
+            <li><a href="#">База знаний</a></li>
+            <li><a href="#">Тарифы</a></li>
+            <li><a href="#">Мобильное приложение</a></li>
+            <li><a href="#">Условия использования</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Контакты</h4>
+          <address>
+            <ul>
+              <li><a href="mailto:hello@music.box">hello@music.box</a></li>
+              <li>
+                <a href="#">Russia, Moscow. Music Box studio</a>
+              </li>
+              <li><a href="tel:+74999999999">+7 (499) 999-99-99</a></li>
+            </ul>
+          </address>
+        </section>
+
+        <section>
+          <h4>Подписывайтесь</h4>
+          <ul class="d-flex justify-content-between">
+            <li>
+              <a target="_blank" href="https://plus.google.com/">
+                <img src="./images/google+.png" alt="google" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/">
+                <img src="./images/twitter.png" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://facebook.com/">
+                <img src="./images/facebook.png" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://instagram.com/">
+                <img src="./images/instagram.png" alt="instagram" />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <hr />
+
+      <div class="container pt-50">
+        <ul class="d-flex flex-wrap sm-flex-column">
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Обслуживание</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -29,4 +29,5 @@
 @mixin bg-image($image) {
   background: url("../images/#{$image}.png") no-repeat center;
   background-size: cover;
+  @content;
 }

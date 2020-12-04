@@ -31,3 +31,12 @@
   @extend .text-uppercase;
   @extend .py-20;
 }
+
+.btn-icon {
+  @extend .d-flex;
+  @extend .align-items-center;
+
+  img {
+    margin-right: 15px;
+  }
+}

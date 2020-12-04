@@ -1,0 +1,38 @@
+.banner-artist {
+  @include bg-image("morten-harket");
+  height: 550px;
+
+  .container {
+    padding-top: 280px;
+  }
+
+  p {
+    @include typography(18px, 21px, 700);
+    margin: 25px 0 40px;
+  }
+
+  button {
+    width: 200px;
+
+    padding-left: 20px;
+
+    &:first-child {
+      margin-right: 35px;
+    }
+  }
+
+  @include media(md) {
+    height: 600px;
+  }
+
+  @include media(sm) {
+    button {
+      width: auto;
+
+      &:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

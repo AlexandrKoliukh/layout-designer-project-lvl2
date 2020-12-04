@@ -6,14 +6,25 @@ on:
     branches: [ master ]
 
 jobs:
-  my-job:
-    name: My job
+  deploy:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+
     steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
       - name: npm install, build
-        # Install and build project
         run: |
           make install
+          make sass
+
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1.0.1
         with:

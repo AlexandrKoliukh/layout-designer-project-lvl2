@@ -5,7 +5,6 @@
   "main": "",
   "dependencies": {},
   "devDependencies": {
-    "git-scripts": "^0.4.3",
     "htmlhint": "^0.14.1",
     "prettier": "^2.2.0",
     "sass": "^1.29.0",

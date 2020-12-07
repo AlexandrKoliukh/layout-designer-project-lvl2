@@ -10,21 +10,21 @@
     row-gap: 40px;
   }
 
-  section {
-    h4 {
+  .footer-section {
+    .footer-title {
       @include typography(18px, 21px, 700);
 
       margin-bottom: 30px;
     }
-
-    ul li {
-      @include typography(16px, 19px, 400);
-
-      margin-bottom: 20px;
-    }
   }
 
-  div:last-child ul {
+  ul li {
+    @include typography(16px, 19px, 400);
+
+    margin-bottom: 20px;
+  }
+
+  & > div:last-child ul {
     column-gap: 40px;
     row-gap: 20px;
   }

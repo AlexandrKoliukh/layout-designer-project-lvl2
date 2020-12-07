@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -159,21 +159,21 @@ h2 {
   column-gap: 30px;
   row-gap: 40px;
 }
-.main-footer section h4 {
+.main-footer .footer-section .footer-title {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.3125rem;
   text-transform: inherit;
   margin-bottom: 30px;
 }
-.main-footer section ul li {
+.main-footer ul li {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.1875rem;
   text-transform: inherit;
   margin-bottom: 20px;
 }
-.main-footer div:last-child ul {
+.main-footer > div:last-child ul {
   column-gap: 40px;
   row-gap: 20px;
 }

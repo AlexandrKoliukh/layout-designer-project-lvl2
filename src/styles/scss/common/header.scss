@@ -1,6 +1,6 @@
 .main-header {
   @include typography(11px, 13px, 700);
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 0;
   left: 0;

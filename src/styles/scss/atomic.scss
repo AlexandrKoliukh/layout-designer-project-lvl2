@@ -165,3 +165,9 @@
 .gap-50 {
   gap: 50px;
 }
+
+.sm-gap-20 {
+  @include media(sm) {
+    gap: 20px;
+  }
+}

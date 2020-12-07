@@ -2,7 +2,7 @@
   @include bg-image("morten-harket") {
     background-position: 70% 0;
   }
-  height: 550px;
+  min-height: 550px;
 
   .container {
     padding-top: 280px;
@@ -24,7 +24,7 @@
   }
 
   @include media(md) {
-    height: 600px;
+    min-height: 600px;
   }
 
   @include media(sm) {
@@ -61,6 +61,8 @@
   @include media(md) {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
+
+    row-gap: 10px;
   }
 }
 

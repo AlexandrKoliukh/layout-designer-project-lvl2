@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $white;
+    color: map-get($colors, "white");
   }
 }
 
@@ -49,21 +49,31 @@ ul {
 }
 
 main {
-  padding-bottom: 100px;
+  @extend .pb-100;
 }
 
 h1 {
-  @include typography(60px, 70px, bold, uppercase);
-
-  @include media(sm) {
-    @include typography(30px, 35px, bold, uppercase);
-  }
+  @extend .text-bold;
+  @extend .text-uppercase;
+  @extend .text-size-7;
+  @extend .md-text-size-4;
+  @extend .sm-text-size-3;
 }
 
 h2 {
-  @include typography(38px, 45px, bold, uppercase);
+  @extend .text-bold;
+  @extend .text-uppercase;
+  @extend .text-size-4;
+  @extend .md-text-size-2;
+  @extend .sm-text-size-1;
+}
 
-  @include media(sm) {
-    @include typography(20px, 23px, bold, uppercase);
-  }
+h3 {
+  font-weight: normal;
+  text-align: center;
+}
+
+p,
+span {
+  @extend .text-size-1;
 }

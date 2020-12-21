@@ -8,6 +8,14 @@
   @return #{$result};
 }
 
+@function strip-units($data) {
+  @if $data == auto {
+    @return $data;
+  }
+
+  @return $data / ($data * 0 + 1);
+}
+
 @mixin media($type) {
   @media screen and (max-width: map-get($breakpoints, $type)) {
     @content;
@@ -17,13 +25,9 @@
 @mixin typography(
   $font-size,
   $line-height: $font-size,
-  $font-weight: inherit,
-  $text-transform: inherit
 ) {
-  font-weight: $font-weight;
   font-size: px-to-rem($font-size);
   line-height: px-to-rem($line-height);
-  text-transform: $text-transform;
 }
 
 @mixin bg-image($image) {

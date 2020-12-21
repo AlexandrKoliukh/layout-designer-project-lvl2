@@ -9,9 +9,9 @@
     <meta name="yandex-verification" content="279fc9aeb1bcb4d3" />
   </head>
 
-  <body class="bg-black text-primary">
+  <body class="bg-black text-white">
     <header
-      class="main-header container d-flex text-secondary align-items-center"
+      class="main-header container d-flex align-items-center text-gray-dark text-size-small text-bold pt-16"
     >
       <label class="burger-btn cursor-pointer" for="burger">
         <img
@@ -23,22 +23,32 @@
         />
       </label>
       <input type="checkbox" hidden="hidden" id="burger" />
-      <nav class="text-uppercase w-100">
+      <nav class="text-uppercase w-full">
         <div
-          class="logo-main d-flex align-items-center text-primary text-uppercase"
+          class="logo-main d-flex align-items-center text-white text-uppercase md-mb-21 mr-100"
         >
-          <img src="images/logo.svg" alt="logo" width="20" height="20" />
-          <a href="index.html">music box</a>
+          <img
+            src="images/logo.svg"
+            alt="logo"
+            width="20"
+            height="20"
+            class="mr-5"
+          />
+          <a href="/">music box</a>
         </div>
-        <ul class="d-flex flex-wrap w-100">
+        <ul class="d-flex flex-wrap w-full">
           <li>
-            <a href="index.html" class="text-primary">Главная</a>
+            <a href="/" class="text-white">Главная</a>
           </li>
           <li>Каталог</li>
           <li><a href="artists.html">Исполнители</a></li>
           <li>Контакты</li>
         </ul>
-        <input type="search" placeholder="поиск.." />
+        <input
+          type="search"
+          placeholder="поиск.."
+          class="bg-dark border-radius-50 px-16 py-5 md-mt-18"
+        />
       </nav>
     </header>
 
@@ -49,29 +59,28 @@
         class="container d-flex justify-content-center align-items-center flex-column text-center"
       >
         <h1>Онлайн музыка где угодно</h1>
-        <br />
-        <span class="h1-subtitle text-uppercase">без ограничений</span>
-        <p class="form-describe">
+        <h2>без ограничений</h2>
+        <p class="form-describe mt-32 mb-16">
           Получите доступ всего за несколько шагов. Заполните форму ниже и
           откройте мир музыки
         </p>
         <form class="d-grid">
           <label>
             <input
-              class="w-100 input-transparent border-radius-3"
+              class="w-full input-transparent border-radius-3 sm-grid-row-full"
               type="text"
               placeholder="Имя"
             />
           </label>
           <label>
             <input
-              class="w-100 input-transparent border-radius-3"
+              class="w-full input-transparent border-radius-3 sm-grid-row-full"
               type="email"
               placeholder="Email"
             />
           </label>
           <button
-            class="col-span-2 btn border-radius-5 bg-green border-none"
+            class="btn border-radius-5 bg-green border-none grid-row-full"
             type="submit"
           >
             Получить доступ
@@ -87,11 +96,14 @@
           class="subscribe-cards-container d-flex justify-content-around flex-wrap shrink-0"
         >
           <div class="subscribe-card card-free d-flex flex-column">
-            <h3>Бесплатная</h3>
+            <h3 class="text-size-2 text-uppercase">Бесплатная</h3>
             <div class="d-flex flex-column mt-auto">
-              <span class="price"> <span>0</span><span>руб.</span> </span>
-              <button class="btn border-4 border-radius-5">Оформить</button>
-              <p class="card-description">
+              <span class="price">
+                <span class="text-size-7">0</span>
+                <span class="text-size-3 ml-16">руб.</span>
+              </span>
+              <button class="btn border-radius-5 mt-24 mb-64">Оформить</button>
+              <p class="text-size-small text-center">
                 Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей
                 коллекции музыки. Присутствует реклама
               </p>
@@ -99,11 +111,14 @@
           </div>
 
           <div class="subscribe-card card-standard d-flex flex-column">
-            <h3>Стандартная</h3>
+            <h3 class="text-size-2 text-uppercase">Стандартная</h3>
             <div class="d-flex flex-column mt-auto">
-              <span class="price"> <span>250</span><span>руб.</span> </span>
-              <button class="btn border-4 border-radius-5">Оформить</button>
-              <p class="card-description">
+              <span class="price">
+                <span class="text-size-7">250</span>
+                <span class="text-size-3 ml-16">руб.</span>
+              </span>
+              <button class="btn border-radius-5 mt-24 mb-64">Оформить</button>
+              <p class="text-size-small text-center">
                 Оплата в месяц. Стандартный тариф предоставляет доступ ко всей
                 коллекции музыки в среднем качестве
               </p>
@@ -111,11 +126,14 @@
           </div>
 
           <div class="subscribe-card card-premium d-flex flex-column">
-            <h3>Премиум</h3>
+            <h3 class="text-size-2 text-uppercase">Премиум</h3>
             <div class="d-flex flex-column mt-auto">
-              <span class="price"> <span>500</span><span>руб.</span> </span>
-              <button class="btn border-4 border-radius-5">Оформить</button>
-              <p class="card-description">
+              <span class="price">
+                <span class="text-size-7">500</span>
+                <span class="text-size-3 ml-16">руб.</span>
+              </span>
+              <button class="btn border-radius-5 mt-24 mb-64">Оформить</button>
+              <p class="text-size-small text-center">
                 Оплата в месяц. Премиум тариф предоставляет доступ ко всей
                 коллекции музыки в высоком качестве.
               </p>
@@ -136,7 +154,7 @@
         >
           <div>
             <img
-              class="w-100"
+              class="w-full"
               src="images/music-to-be-murdered-by.png"
               alt="Eminem"
               height="284"
@@ -166,9 +184,7 @@
                 </time>
               </p>
             </footer>
-            <button
-              class="btn border-white border-radius-5 py-10 text-secondary"
-            >
+            <button class="btn border-white border-radius-5 py-10 text-gray">
               К альбому
             </button>
           </div>
@@ -201,9 +217,7 @@
                 </time>
               </p>
             </footer>
-            <button
-              class="btn border-white border-radius-5 py-10 text-secondary"
-            >
+            <button class="btn border-white border-radius-5 py-10 text-gray">
               К альбому
             </button>
           </div>
@@ -211,7 +225,7 @@
             <img
               src="images/ordinary-man.png"
               alt="Ozzy Ozbourne"
-              class="w-100"
+              class="w-full"
               height="284"
             />
           </div>
@@ -225,13 +239,13 @@
         >
           <div>
             <img
-              class="w-100"
+              class="w-full"
               alt="phones"
               src="images/iphone.png"
               height="278"
             />
           </div>
-          <div class="text-secondary d-flex flex-column justify-content-center">
+          <div class="text-gray d-flex flex-column justify-content-center">
             <p>
               Воспользуйтесь нашим мобильным приложением. Оно позволит слушать
               музыку <br />
@@ -243,7 +257,7 @@
               из нашей коллекции. Вы можете слушать музыку даже без интернета.
             </p>
             <button
-              class="app-download btn bg-red border-radius-50 border-none text-primary py-20 mt-25"
+              class="app-download btn bg-red border-radius-50 border-none text-white py-20 mt-25"
             >
               Скачать
             </button>

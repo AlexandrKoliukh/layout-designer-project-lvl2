@@ -2,39 +2,15 @@
   @include bg-image("morten-harket") {
     background-position: 70% 0;
   }
-  min-height: 550px;
-
-  .container {
-    padding-top: 280px;
-  }
-
-  p {
-    @include typography(18px, 21px, 700);
-    margin: 25px 0 40px;
-  }
+  height: 100vh;
 
   button {
     width: 200px;
-
-    padding-left: 20px;
-
-    &:first-child {
-      margin-right: 35px;
-    }
-  }
-
-  @include media(md) {
-    min-height: 600px;
   }
 
   @include media(sm) {
     button {
       width: auto;
-
-      &:first-child {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
     }
   }
 }
@@ -47,14 +23,17 @@
   row-gap: 25px;
 
   .song-card {
-    @include typography(14px, 16px);
-
     img {
-      margin-right: 16px;
+      @extend .mr-16;
+    }
+    .song-name {
+      @extend .text-bold;
+      @extend .text-uppercase;
+      @extend .text-size-small;
     }
     .author-name {
-      @include typography(12px, 14px);
-      margin-top: 5px;
+      @extend .text-size-small;
+      @extend .text-gray;
     }
   }
 
@@ -68,15 +47,15 @@
 
 .media-item-group {
   .media-item {
+    @extend .text-size-1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     max-width: 250px;
 
     .item-title {
-      @include typography(20px, 23px, 700);
-      padding: 10px 0;
+      @extend .mt-16;
+      @extend .text-bold;
     }
   }
 
@@ -87,10 +66,6 @@
 
       img {
         height: 130px;
-      }
-
-      .item-title {
-        @include typography(16px, 18px, 700);
       }
     }
   }

@@ -1,27 +1,20 @@
 .main-footer {
+  @extend .text-gray;
+  @extend .text-size-1;
   padding: 80px 0 50px;
 
-  color: $gray-light;
-
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+
+  .footer-title {
+    @extend .text-bold;
+    @extend .text-uppercase;
+    @extend .text-white;
+    @extend .mb-16;
+  }
 
   & > div {
     column-gap: 30px;
     row-gap: 40px;
-  }
-
-  .footer-section {
-    .footer-title {
-      @include typography(18px, 21px, 700);
-
-      margin-bottom: 30px;
-    }
-  }
-
-  ul li {
-    @include typography(16px, 19px, 400);
-
-    margin-bottom: 20px;
   }
 
   & > div:last-child ul {

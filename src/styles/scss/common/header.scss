@@ -1,18 +1,17 @@
 .main-header {
-  @include typography(11px, 13px, 700);
   position: absolute;
   top: 15px;
   right: 0;
   left: 0;
 
   .burger-btn {
+    @extend .mr-32;
     display: none;
     align-self: flex-start;
-    margin-right: 30px;
   }
 
   nav {
-    display: flex;
+    @extend .d-flex;
 
     transform-origin: top;
 
@@ -20,32 +19,13 @@
   }
 
   li {
-    display: flex;
-    align-items: center;
-    margin-right: 36px;
-    padding: 5px;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .mr-32;
   }
 
   .logo-main {
-    width: 200px;
-    margin-right: 100px;
-
-    img {
-      margin-right: 5px;
-    }
-  }
-
-  input {
-    height: 25px;
-    padding: 0 15px;
-
-    background-color: $nav-search;
-    border-radius: 50px;
-  }
-  @include media(md) {
-    .logo-main {
-      margin-right: 10px;
-    }
+    white-space: nowrap;
   }
 
   @include media(md) {
@@ -65,9 +45,7 @@
     }
 
     input {
-      order: 2;
-
-      margin: 25px 0;
+      order: 4;
     }
 
     .burger-btn {

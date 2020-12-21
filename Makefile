@@ -14,3 +14,6 @@ sass:
 
 sass-watch:
 	npx sass --watch ./src/styles/scss/app.scss:./src/styles/style.css
+
+minify:
+	npx cleancss -o ./src/styles/style.min.css ./src/styles/style.css

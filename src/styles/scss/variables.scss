@@ -1,24 +1,75 @@
-$white: #fff;
-$black: #000;
-$green: #34c176;
-$orange: #f89202;
-$brown: #95390c;
-$red: #ff4157;
-$purple: #5328a1;
-
-$public-date: #555;
-$nav-search: #3c3b3d;
-
-$gray-dark: #8c8c8c;
-$gray-light: #cacaca;
-
 $rem-base: 16px;
 
+$font-sizes: (
+  7: (
+    64px,
+    96px,
+  ),
+  6: (
+    56px,
+    84px,
+  ),
+  5: (
+    48px,
+    72px,
+  ),
+  4: (
+    40px,
+    60px,
+  ),
+  3: (
+    32px,
+    48px,
+  ),
+  2: (
+    24px,
+    36px,
+  ),
+  1: (
+    16px,
+    24px,
+  ),
+  small: (
+    12.8px,
+    19.2px,
+  ),
+);
+
+$colors: (
+  "white": #fff,
+  "black": #08020d,
+  "green": #34c176,
+  "orange": #f89202,
+  "brown": #95390c,
+  "red": #ff4157,
+  "purple": #5328a1,
+  "gray": #e0e0e0,
+  "gray-dark": #cacaca,
+  "dark": #3c3b3d,
+);
+
 $breakpoints: (
-  xxs: 320px,
-  xs: 375px,
+  //xxs: 320px,
+  //xs: 375px,
   sm: 425px,
   md: 768px,
-  lg: 1024px,
-  xl: 1280px,
+  //lg: 1024px,
+  xl: 1280px
+);
+
+$indents: (
+  5px,
+  16px,
+  18px,
+  21px,
+  24px,
+  30px,
+  32px,
+  40px,
+  46px,
+  50px,
+  64px,
+  100px,
+  0px,
+  auto
 );

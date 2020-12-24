@@ -22,10 +22,7 @@
   }
 }
 
-@mixin typography(
-  $font-size,
-  $line-height: $font-size,
-) {
+@mixin typography($font-size, $line-height: $font-size) {
   font-size: px-to-rem($font-size);
   line-height: px-to-rem($line-height);
 }

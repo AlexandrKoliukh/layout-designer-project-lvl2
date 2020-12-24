@@ -23,9 +23,6 @@
   row-gap: 25px;
 
   .song-card {
-    img {
-      @extend .mr-16;
-    }
     .song-name {
       @extend .text-bold;
       @extend .text-uppercase;
@@ -54,7 +51,6 @@
     max-width: 250px;
 
     .item-title {
-      @extend .mt-16;
       @extend .text-bold;
     }
   }

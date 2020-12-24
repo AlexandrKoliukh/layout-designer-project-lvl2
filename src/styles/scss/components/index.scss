@@ -1,0 +1,21 @@
+@import "header";
+@import "footer";
+@import "btn";
+@import "subscribe-card";
+@import "article-news";
+
+.container {
+  @extend .mx-auto;
+  @extend .w-full;
+  max-width: map-get($breakpoints, xl);
+
+  padding: 0 px-to-rem(21px);
+}
+
+.input-transparent {
+  padding: px-to-rem(18px) px-to-rem(21px);
+  @extend .bg-transparent;
+  @extend .border-2;
+  @extend .border-white;
+  @extend .text-bold;
+}

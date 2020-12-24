@@ -9,7 +9,7 @@ plugins:
   - stylelint-scss
 
 ignoreFiles:
-  - "./src/styles/style.css"
+  - "./src/styles/*.**.css"
 
 rules:
   prettier/prettier: true

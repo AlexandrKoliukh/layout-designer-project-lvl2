@@ -1,0 +1,31 @@
+.subscribe-card {
+  max-width: px-to-rem(370px);
+  min-height: px-to-rem(550px);
+  padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(64px);
+
+  border-radius: 15px;
+
+  button {
+    margin: 24px 0 64px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    text-transform: uppercase;
+
+    column-gap: px-to-rem(16px);
+  }
+
+  .card-title {
+    @include typography(24px, 45px);
+
+    @include media(sm) {
+      @include typography(16px, 24px);
+    }
+  }
+}

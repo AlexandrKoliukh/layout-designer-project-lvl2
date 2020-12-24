@@ -6,16 +6,6 @@
   display: grid;
 }
 
-.grid-row-full {
-  grid-column: 1 / -1;
-}
-
-.sm-grid-row-full {
-  @include media(sm) {
-    grid-column: 1 / -1;
-  }
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -36,6 +26,12 @@
   flex-direction: column;
 }
 
+.sm-flex-column {
+  @include media(sm) {
+    flex-direction: column;
+  }
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -54,6 +50,10 @@
 
 .align-items-center {
   align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
 }
 
 .w-full {
@@ -108,10 +108,46 @@
   gap: 50px;
 }
 
-.sm-gap-20 {
-  @include media(sm) {
-    gap: 20px;
-  }
+.pt-50 {
+  padding-top: px-to-rem(50px);
+}
+
+.pt-100 {
+  padding-top: px-to-rem(100px);
+}
+
+.pb-100 {
+  padding-bottom: px-to-rem(100px);
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 @each $name, $color in $colors {
@@ -140,77 +176,6 @@
     .#{$point}-text-size-#{$text-class} {
       @include media($point) {
         @include typography($font-size, $line-height);
-      }
-    }
-  }
-}
-
-@each $indent in $indents {
-  $indent-name: strip-units($indent);
-  $indent-rem: $indent !default;
-
-  @if $indent != auto {
-    $indent-rem: px-to-rem($indent);
-  } @else {
-    $indent-rem: auto;
-  }
-
-  @each $type in "m", "p" {
-    $property: margin !default;
-
-    @if ($type == "p") {
-      $property: padding;
-    }
-
-    .#{$type}-#{$indent-name} {
-      #{$property}: $indent-rem;
-    }
-    .#{$type}x-#{$indent-name} {
-      #{$property}-right: $indent-rem;
-      #{$property}-left: $indent-rem;
-    }
-    .#{$type}y-#{$indent-name} {
-      #{$property}-top: $indent-rem;
-      #{$property}-bottom: $indent-rem;
-    }
-    .#{$type}t-#{$indent-name} {
-      #{$property}-top: $indent-rem;
-    }
-    .#{$type}r-#{$indent-name} {
-      #{$property}-right: $indent-rem;
-    }
-    .#{$type}b-#{$indent-name} {
-      #{$property}-bottom: $indent-rem;
-    }
-    .#{$type}l-#{$indent-name} {
-      #{$property}-left: $indent-rem;
-    }
-
-    @each $point, $value in $breakpoints {
-      @include media($point) {
-        .#{$point}-#{$type}-#{$indent-name} {
-          #{$property}: $indent-rem;
-        }
-        .#{$point}-#{$type}x-#{$indent-name} {
-          #{$property}-right: $indent-rem;
-          #{$property}-left: $indent-rem;
-        }
-        .#{$point}-#{$type}y-#{$indent-name} {
-          #{$property}-top: $indent-rem;
-          #{$property}-bottom: $indent-rem;
-        }
-        .#{$point}-#{$type}t-#{$indent-name} {
-          #{$property}-top: $indent-rem;
-        }
-        .#{$point}-#{$type}r-#{$indent-name} {
-          #{$property}-right: $indent-rem;
-        }
-        .#{$point}-#{$type}b-#{$indent-name} {
-          #{$property}-bottom: $indent-rem;
-        }
-        .#{$point}-#{$type}l-#{$indent-name} {
-          #{$property}-left: $indent-rem;
-        }
       }
     }
   }

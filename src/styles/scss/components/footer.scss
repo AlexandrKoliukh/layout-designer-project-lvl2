@@ -1,15 +1,19 @@
-.main-footer {
+.footer {
   @extend .text-gray;
   @extend .text-size-1;
   padding: 80px 0 50px;
 
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
+  .footer-section {
+    align-self: flex-start;
+  }
+
   .footer-title {
+    margin-bottom: px-to-rem(16px);
     @extend .text-bold;
     @extend .text-uppercase;
     @extend .text-white;
-    @extend .mb-16;
   }
 
   & > div {

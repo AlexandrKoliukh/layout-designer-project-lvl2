@@ -10,7 +10,7 @@
   </head>
   <body class="text-white bg-black">
   <header
-    class="main-header container d-flex align-items-center text-gray-dark text-size-small text-bold pt-16"
+    class="header header-absolute container d-flex text-gray text-size-small"
   >
     <label class="burger-btn cursor-pointer" for="burger">
       <img
@@ -22,22 +22,22 @@
       />
     </label>
     <input type="checkbox" hidden="hidden" id="burger" />
-    <nav class="text-uppercase w-full">
+    <nav class="text-uppercase w-full d-flex">
       <div
-        class="logo-main d-flex align-items-center text-white text-uppercase md-mb-21 mr-100"
+        class="logo-main d-flex align-items-center text-white text-uppercase"
       >
-        <img src="images/logo.svg" alt="logo" width="20" height="20" class="mr-5" />
+        <img src="images/logo.svg" alt="logo" width="25" height="25" />
         <a href="/">music box</a>
       </div>
       <ul class="d-flex flex-wrap w-full">
         <li>
-          <a href="index.html">Главная</a>
+          <a href="index.html" class="text-white">Главная</a>
         </li>
         <li>Каталог</li>
-        <li><a href="artists.html" class="text-white">Исполнители</a></li>
+        <li><a href="artists.html">Исполнители</a></li>
         <li>Контакты</li>
       </ul>
-      <input type="search" placeholder="поиск.." class="bg-dark border-radius-50 px-16 py-5 md-mt-18" />
+      <input type="search" placeholder="поиск.." />
     </nav>
   </header>
 
@@ -286,79 +286,79 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container d-flex justify-content-between pb-100 flex-wrap">
-        <div class="footer-section">
-          <div class="footer-title">О нас</div>
-          <ul>
-            <li><a href="#">История компании</a></li>
-            <li><a href="#">Карьера</a></li>
-            <li><a href="#">Особенности</a></li>
-            <li><a href="#">Пресса</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <div class="footer-title">Поддержка</div>
-          <ul>
-            <li><a href="#">База знаний</a></li>
-            <li><a href="#">Тарифы</a></li>
-            <li><a href="#">Мобильное приложение</a></li>
-            <li><a href="#">Условия использования</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <div class="footer-title">Контакты</div>
-          <address>
-            <ul>
-              <li><a href="mailto:hello@music.box">hello@music.box</a></li>
-              <li>
-                <a href="#">Russia, Moscow. Music Box studio</a>
-              </li>
-              <li><a href="tel:+74999999999">+7 (499) 999-99-99</a></li>
-            </ul>
-          </address>
-        </div>
-
-        <div class="footer-section">
-          <div class="footer-title">Подписывайтесь</div>
-          <ul class="d-flex justify-content-between">
-            <li>
-              <a target="_blank" href="https://plus.google.com/">
-                <img src="./images/google+.png" alt="google" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://twitter.com/">
-                <img src="./images/twitter.png" alt="twitter" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://facebook.com/">
-                <img src="./images/facebook.png" alt="facebook" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://instagram.com/">
-                <img src="./images/instagram.png" alt="instagram" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="container pt-50">
-        <ul class="d-flex flex-wrap sm-flex-column">
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Обслуживание</a></li>
-          <li><a href="#">Блог</a></li>
-          <li><a href="#">Поддержка</a></li>
-          <li><a href="#">Контакты</a></li>
+  <footer class="footer">
+    <div class="container d-flex justify-content-between pb-100 flex-wrap sm-flex-column">
+      <div class="footer-section">
+        <div class="footer-title">О нас</div>
+        <ul>
+          <li><a href="#">История компании</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="#">Особенности</a></li>
+          <li><a href="#">Пресса</a></li>
         </ul>
       </div>
-    </footer>
+
+      <div class="footer-section">
+        <div class="footer-title">Поддержка</div>
+        <ul>
+          <li><a href="#">База знаний</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Мобильное приложение</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-title">Контакты</div>
+        <address>
+          <ul>
+            <li><a href="mailto:hello@music.box">hello@music.box</a></li>
+            <li>
+              <a href="#">Russia, Moscow. Music Box studio</a>
+            </li>
+            <li><a href="tel:+74999999999">+7 (499) 999-99-99</a></li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-title">Подписывайтесь</div>
+        <ul class="d-flex justify-content-between">
+          <li>
+            <a target="_blank" href="https://plus.google.com/">
+              <img src="./images/google+.png" alt="google" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/">
+              <img src="./images/twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://facebook.com/">
+              <img src="./images/facebook.png" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com/">
+              <img src="./images/instagram.png" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container pt-50">
+      <ul class="d-flex flex-wrap sm-flex-column">
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Обслуживание</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </footer>
   </body>
 </html>

@@ -48,8 +48,10 @@ ul {
   list-style: none;
 }
 
-main {
-  @extend .pb-100;
+input[type="search"] {
+  @extend .bg-dark;
+  @extend .border-radius-50;
+  padding: px-to-rem(5px) px-to-rem(16px);
 }
 
 h1 {
@@ -69,8 +71,12 @@ h2 {
 }
 
 h3 {
+  @include typography(30px, 45px);
   font-weight: normal;
-  text-align: center;
+
+  @include media(sm) {
+    @include typography(16px, 24px);
+  }
 }
 
 p,

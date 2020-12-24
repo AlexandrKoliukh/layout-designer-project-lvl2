@@ -2,7 +2,7 @@
 @import "variables";
 @import "utils";
 @import "default";
-@import "common/styles";
-@import "main";
-@import "artist";
+@import "components/index";
+@import "pages/main";
+@import "pages/artist";
 @import "atomic";

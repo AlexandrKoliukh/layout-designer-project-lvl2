@@ -1,0 +1,89 @@
+.banner-main {
+  @include bg-image("banner");
+
+  height: 100vh;
+
+  & > div {
+    height: 100%;
+  }
+
+  .form-describe {
+    margin-top: px-to-rem(32px);
+    margin-bottom: px-to-rem(16px);
+  }
+
+  form {
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 50%;
+
+    column-gap: px-to-rem(24px);
+    row-gap: px-to-rem(24px);
+
+    button {
+      grid-column: 1 / -1;
+    }
+
+    @include media(md) {
+      width: 100%;
+      row-gap: px-to-rem(16px);
+
+      label {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @include media(sm) {
+      input {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}
+
+.subscribe-cards-container {
+  min-height: px-to-rem(600px);
+
+  margin-top: px-to-rem(64px);
+  margin-bottom: px-to-rem(50px);
+
+  column-gap: px-to-rem(30px);
+  row-gap: px-to-rem(50px);
+
+  .card-free {
+    @include bg-image("subscribe-1");
+  }
+
+  .card-standard {
+    @include bg-image("subscribe-2");
+  }
+
+  .card-premium {
+    @include bg-image("subscribe-3");
+  }
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: px-to-rem(50px);
+
+  column-gap: px-to-rem(30px);
+
+  button {
+    width: px-to-rem(131px);
+    margin-top: px-to-rem(48px);
+    padding: px-to-rem(17px);
+  }
+
+  @include media(lg) {
+    .box-image {
+      width: 100%;
+    }
+  }
+
+  @include media(md) {
+    flex-direction: column !important;
+    row-gap: px-to-rem(20px);
+  }
+}

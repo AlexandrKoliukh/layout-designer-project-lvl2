@@ -1,0 +1,14 @@
+.article-news {
+  header {
+    margin-bottom: px-to-rem(30px);
+  }
+
+  .author-name {
+    margin: 0 px-to-rem(16px);
+  }
+
+  footer {
+    margin-top: px-to-rem(24px);
+    margin-bottom: px-to-rem(15px);
+  }
+}

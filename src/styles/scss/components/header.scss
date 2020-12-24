@@ -1,31 +1,38 @@
-.main-header {
+.header-absolute {
   position: absolute;
-  top: 15px;
+  top: px-to-rem(15px);
   right: 0;
   left: 0;
+}
 
+.header {
   .burger-btn {
-    @extend .mr-32;
     display: none;
     align-self: flex-start;
+
+    margin-right: 32px;
   }
 
   nav {
-    @extend .d-flex;
-
     transform-origin: top;
 
     transition: 0.3s;
   }
 
   li {
-    @extend .d-flex;
-    @extend .align-items-center;
-    @extend .mr-32;
+    display: flex;
+    align-items: center;
+    margin-right: px-to-rem(32px);
   }
 
   .logo-main {
+    margin-right: px-to-rem(100px);
+
     white-space: nowrap;
+
+    img {
+      margin-right: px-to-rem(10px);
+    }
   }
 
   @include media(md) {
@@ -42,10 +49,13 @@
 
     .logo-main {
       order: 1;
+
+      margin-bottom: px-to-rem(21px);
     }
 
     input {
       order: 4;
+      margin-top: px-to-rem(16px);
     }
 
     .burger-btn {

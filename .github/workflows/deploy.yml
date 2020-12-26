@@ -3,16 +3,15 @@ name: Deploy to surge
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   deploy:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [ 12.x ]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -24,12 +23,11 @@ jobs:
         run: |
           make install
           make sass
-          make minify
 
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1.0.1
         with:
-          domain: 'alk-music-box.surge.sh'
-          project: './src/'
+          domain: "alk-music-box.surge.sh"
+          project: "./src/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}

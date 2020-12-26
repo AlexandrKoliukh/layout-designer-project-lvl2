@@ -1,24 +1,4 @@
-.header-absolute {
-  position: absolute;
-  top: px-to-rem(15px);
-  right: 0;
-  left: 0;
-}
-
 .header {
-  .burger-btn {
-    display: none;
-    align-self: flex-start;
-
-    margin-right: 32px;
-  }
-
-  nav {
-    transform-origin: top;
-
-    transition: 0.3s;
-  }
-
   li {
     display: flex;
     align-items: center;
@@ -38,8 +18,6 @@
   @include media(md) {
     nav {
       flex-direction: column;
-
-      transform: scaleY(0);
     }
 
     ul {
@@ -60,10 +38,6 @@
 
     .burger-btn {
       display: block;
-    }
-
-    #burger:checked + nav {
-      transform: scaleY(1);
     }
   }
 }

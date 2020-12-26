@@ -3,6 +3,20 @@
 
   height: 100vh;
 
+  .main-subtitle {
+    @extend .text-uppercase;
+    @extend .text-bold;
+    @include typography(40px, 60px);
+
+    @include media(md) {
+      @include typography(24px, 36px);
+    }
+
+    @include media(sm) {
+      @include typography(18px, 27px);
+    }
+  }
+
   & > div {
     height: 100%;
   }
@@ -42,7 +56,7 @@
 }
 
 .subscribe-cards-container {
-  min-height: px-to-rem(600px);
+  min-height: px-to-rem(621px);
 
   margin-top: px-to-rem(64px);
   margin-bottom: px-to-rem(50px);
@@ -64,11 +78,17 @@
 }
 
 .main-box {
+  @extend .text-gray-dark;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-top: px-to-rem(50px);
 
   column-gap: px-to-rem(30px);
+
+  header {
+    @extend .text-white;
+  }
 
   button {
     width: px-to-rem(131px);
@@ -86,4 +106,10 @@
     flex-direction: column !important;
     row-gap: px-to-rem(20px);
   }
+}
+
+.btn-app {
+  margin-top: px-to-rem(16px) !important;
+
+  text-transform: none !important;
 }

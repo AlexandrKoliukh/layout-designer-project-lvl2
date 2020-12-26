@@ -4,11 +4,10 @@
   "description": "Music portal layout",
   "main": "",
   "scripts": {
-    "postinstall": "npx sass ./src/styles/scss/app.scss ./src/styles/style.css && npx cleancss -o ./src/styles/style.min.css ./src/styles/style.css"
+    "postinstall": "npx sass ./src/styles/scss/app.scss ./src/styles/style.css"
   },
   "dependencies": {},
   "devDependencies": {
-    "clean-css-cli": "^4.3.0",
     "htmlhint": "^0.14.1",
     "prettier": "^2.2.0",
     "sass": "^1.29.0",

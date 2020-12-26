@@ -1,14 +1,29 @@
 .subscribe-card {
+  display: flex;
+  flex-direction: column;
+
   max-width: px-to-rem(370px);
   min-height: px-to-rem(550px);
-  padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(64px);
+  padding: px-to-rem(24px 24px 64px);
 
   border-radius: 15px;
 
-  button {
-    margin: 24px 0 64px;
+  .btn {
+    @extend .border-radius-5;
+    margin: px-to-rem(24px 0px 64px);
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+
+  .card-description {
+    @extend .text-size-small;
+    @extend .text-center;
   }
 
   .price {
@@ -19,9 +34,21 @@
     text-transform: uppercase;
 
     column-gap: px-to-rem(16px);
+
+    span:first-child {
+      @include typography(64px, 96px);
+    }
+    span:last-child {
+      @include typography(32px, 48px);
+
+      position: relative;
+      top: 10px;
+    }
   }
 
-  .card-title {
+  h3 {
+    @extend .text-uppercase;
+    @extend .text-center;
     @include typography(24px, 45px);
 
     @include media(sm) {

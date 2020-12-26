@@ -52,10 +52,45 @@ input[type=search] {
   padding: 0.3125rem 1rem;
 }
 
+p,
+span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 5.625rem;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+  }
+}
+
+h2 {
+  margin-bottom: 3rem;
+  font-size: 2.375rem;
+  line-height: 4.6875rem;
+}
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+}
+
 h3 {
   font-size: 1.875rem;
   line-height: 2.8125rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 @media screen and (max-width: 425px) {
   h3 {
@@ -64,22 +99,6 @@ h3 {
   }
 }
 
-.header-absolute {
-  position: absolute;
-  top: 0.9375rem;
-  right: 0;
-  left: 0;
-}
-
-.header .burger-btn {
-  display: none;
-  align-self: flex-start;
-  margin-right: 32px;
-}
-.header nav {
-  transform-origin: top;
-  transition: 0.3s;
-}
 .header li {
   display: flex;
   align-items: center;
@@ -95,7 +114,6 @@ h3 {
 @media screen and (max-width: 768px) {
   .header nav {
     flex-direction: column;
-    transform: scaleY(0);
   }
   .header ul {
     flex-direction: column;
@@ -112,13 +130,12 @@ h3 {
   .header .burger-btn {
     display: block;
   }
-  .header #burger:checked + nav {
-    transform: scaleY(1);
-  }
 }
 
 .footer {
-  padding: 80px 0 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 5rem 0rem 3.125rem;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 .footer .footer-section {
@@ -128,17 +145,17 @@ h3 {
   margin-bottom: 1rem;
 }
 .footer > div {
-  column-gap: 30px;
-  row-gap: 40px;
+  column-gap: 1.875rem;
+  row-gap: 2.5rem;
 }
 .footer > div:last-child ul {
-  column-gap: 40px;
-  row-gap: 20px;
+  column-gap: 2.5rem;
+  row-gap: 1.25rem;
 }
 
 .btn {
   padding: 1.125rem 1.875rem;
-  text-transform: uppercase;
+  white-space: nowrap;
   background: transparent;
   border: 1px solid;
   cursor: pointer;
@@ -149,18 +166,25 @@ h3 {
   align-items: center;
 }
 .btn-icon img {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .subscribe-card {
+  display: flex;
+  flex-direction: column;
   max-width: 23.125rem;
   min-height: 34.375rem;
   padding: 1.5rem 1.5rem 4rem;
   border-radius: 15px;
 }
-.subscribe-card button {
-  margin: 24px 0 64px;
+.subscribe-card .btn {
+  margin: 1.5rem 0rem 4rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.subscribe-card > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 .subscribe-card .price {
   display: flex;
@@ -169,12 +193,22 @@ h3 {
   text-transform: uppercase;
   column-gap: 1rem;
 }
-.subscribe-card .card-title {
+.subscribe-card .price span:first-child {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+.subscribe-card .price span:last-child {
+  font-size: 2rem;
+  line-height: 3rem;
+  position: relative;
+  top: 10px;
+}
+.subscribe-card h3 {
   font-size: 1.5rem;
   line-height: 2.8125rem;
 }
 @media screen and (max-width: 425px) {
-  .subscribe-card .card-title {
+  .subscribe-card h3 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -191,19 +225,78 @@ h3 {
   margin-bottom: 0.9375rem;
 }
 
+.media-item {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+.media-item > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.125rem;
+}
+.media-item h3 {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: bold;
+}
+.song-card {
+  display: flex;
+  align-items: center;
+}
+.song-card .song-card-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.song-card img {
+  margin-right: 0.9375rem;
+}
+.song-card .time {
+  display: flex;
+  align-items: center;
+}
 .container {
   max-width: 1280px;
+  margin: 0 auto;
   padding: 0 1.3125rem;
 }
 
 .input-transparent {
   padding: 1.125rem 1.3125rem;
+  background: transparent;
+  border: 2px solid;
+}
+
+.header-absolute {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0;
+  left: 0;
 }
 
 .banner-main {
   background: url("../images/banner.png") no-repeat center;
   background-size: cover;
   height: 100vh;
+}
+.banner-main .main-subtitle {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+@media screen and (max-width: 768px) {
+  .banner-main .main-subtitle {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner-main .main-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
 }
 .banner-main > div {
   height: 100%;
@@ -237,7 +330,7 @@ h3 {
 }
 
 .subscribe-cards-container {
-  min-height: 37.5rem;
+  min-height: 38.8125rem;
   margin-top: 4rem;
   margin-bottom: 3.125rem;
   column-gap: 1.875rem;
@@ -258,6 +351,7 @@ h3 {
 
 .main-box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-top: 3.125rem;
   column-gap: 1.875rem;
@@ -279,49 +373,52 @@ h3 {
   }
 }
 
+.btn-app {
+  margin-top: 1rem !important;
+  text-transform: none !important;
+}
+
 .banner-artist {
   background: url("../images/morten-harket.png") no-repeat center;
   background-size: cover;
   background-position: 70% 0;
   height: 100vh;
+  min-height: 500px;
+}
+.banner-artist h1 {
+  margin-bottom: 1rem;
+}
+.banner-artist .banner-buttons {
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 .banner-artist button {
-  width: 200px;
-}
-@media screen and (max-width: 425px) {
-  .banner-artist button {
-    width: auto;
-  }
+  width: 12.5rem;
 }
 
 .song-cards-container {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 60px;
-  row-gap: 25px;
+  column-gap: 3.125rem;
+  row-gap: 1.5625rem;
 }
 @media screen and (max-width: 768px) {
   .song-cards-container {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    row-gap: 10px;
   }
 }
 
-.media-item-group .media-item {
-  display: flex;
-  flex-direction: column;
-  max-width: 250px;
+.media-item-group {
+  column-gap: 3.125rem;
+  row-gap: 1.5625rem;
 }
 @media screen and (max-width: 768px) {
-  .media-item-group {
-    justify-content: space-around;
-  }
   .media-item-group .media-item {
     max-width: 130px;
   }
   .media-item-group .media-item img {
-    height: 130px;
+    height: 8.125rem;
   }
 }
 
@@ -337,15 +434,11 @@ h3 {
   flex-wrap: wrap;
 }
 
-.shrink-0 {
-  flex-shrink: 0;
-}
-
-.text-uppercase, h1, h2, .footer .footer-title, .song-cards-container .song-card .song-name {
+.text-uppercase, h1, h2, .footer .footer-title, .btn, .subscribe-card h3, .song-card .song-name, .banner-main .main-subtitle {
   text-transform: uppercase;
 }
 
-.text-bold, h1, h2, .footer .footer-title, .input-transparent, .song-cards-container .song-card .song-name, .media-item-group .media-item .item-title {
+.text-bold, .footer .footer-title, .song-card .song-name, .input-transparent, .banner-main .main-subtitle {
   font-weight: 700;
 }
 
@@ -379,43 +472,19 @@ h3 {
   align-items: center;
 }
 
-.align-items-start {
-  align-items: flex-start;
-}
-
 .w-full, .container {
   width: 100%;
 }
 
-.w-half {
-  width: 50%;
-}
-
-.text-center {
+.text-center, .subscribe-card .card-description, .subscribe-card h3 {
   text-align: center;
-}
-
-.bg-transparent, .input-transparent {
-  background: transparent;
-}
-
-.border-1 {
-  border: 1px solid;
-}
-
-.border-2, .input-transparent {
-  border: 2px solid;
-}
-
-.border-4 {
-  border: 4px solid;
 }
 
 .border-radius-3 {
   border-radius: 3px;
 }
 
-.border-radius-5 {
+.border-radius-5, .subscribe-card .btn {
   border-radius: 5px;
 }
 
@@ -423,16 +492,8 @@ h3 {
   border-radius: 50px;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .border-none {
   border: none;
-}
-
-.gap-50 {
-  gap: 50px;
 }
 
 .pt-50 {
@@ -447,41 +508,16 @@ h3 {
   padding-bottom: 6.25rem;
 }
 
-.m-auto {
-  margin: auto;
-}
-
-.mx-auto, .container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
+.text-size-small, .subscribe-card .card-description, .song-card .time, .song-card .song-name, .song-card .author-name {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 .bg-white {
   background-color: #fff;
 }
 
-.text-white, .footer .footer-title {
+.text-white, .footer .footer-title, .main-box header {
   color: #fff;
 }
 
@@ -525,28 +561,16 @@ h3 {
   border-color: #f89202;
 }
 
-.bg-brown {
+.bg-red {
   background-color: #95390c;
 }
 
-.text-brown {
+.text-red {
   color: #95390c;
 }
 
-.border-brown {
-  border-color: #95390c;
-}
-
-.bg-red {
-  background-color: #ff4157;
-}
-
-.text-red {
-  color: #ff4157;
-}
-
 .border-red {
-  border-color: #ff4157;
+  border-color: #95390c;
 }
 
 .bg-purple {
@@ -565,7 +589,7 @@ h3 {
   background-color: #e0e0e0;
 }
 
-.text-gray, .footer, .song-cards-container .song-card .author-name {
+.text-gray, .footer, .media-item span, .song-card .time, .song-card .author-name {
   color: #e0e0e0;
 }
 
@@ -577,7 +601,7 @@ h3 {
   background-color: #cacaca;
 }
 
-.text-gray-dark {
+.text-gray-dark, .main-box {
   color: #cacaca;
 }
 
@@ -595,271 +619,6 @@ h3 {
 
 .border-dark {
   border-color: #3c3b3d;
-}
-
-.text-size-7, h1 {
-  font-size: 4rem;
-  line-height: 6rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-7 {
-    font-size: 4rem;
-    line-height: 6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-7 {
-    font-size: 4rem;
-    line-height: 6rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-7 {
-    font-size: 4rem;
-    line-height: 6rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-7 {
-    font-size: 4rem;
-    line-height: 6rem;
-  }
-}
-
-.text-size-6 {
-  font-size: 3.5rem;
-  line-height: 5.25rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-6 {
-    font-size: 3.5rem;
-    line-height: 5.25rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-6 {
-    font-size: 3.5rem;
-    line-height: 5.25rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-6 {
-    font-size: 3.5rem;
-    line-height: 5.25rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-6 {
-    font-size: 3.5rem;
-    line-height: 5.25rem;
-  }
-}
-
-.text-size-5 {
-  font-size: 3rem;
-  line-height: 4.5rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-5 {
-    font-size: 3rem;
-    line-height: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-5 {
-    font-size: 3rem;
-    line-height: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-5 {
-    font-size: 3rem;
-    line-height: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-5 {
-    font-size: 3rem;
-    line-height: 4.5rem;
-  }
-}
-
-.text-size-4, h2 {
-  font-size: 2.5rem;
-  line-height: 3.75rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-4 {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-4, h1 {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-4 {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-4 {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-.text-size-3 {
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-3, h1 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-3 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-3 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-3 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-.text-size-2 {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-2 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-2, h2 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-2 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-2 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-}
-
-.text-size-1, p,
-span, .footer, .media-item-group .media-item {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-1, h2 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-1 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-1 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-1 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-.text-size-small, .song-cards-container .song-card .song-name, .song-cards-container .song-card .author-name {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-}
-
-@media screen and (max-width: 425px) {
-  .sm-text-size-small {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md-text-size-small {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .lg-text-size-small {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .xl-text-size-small {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

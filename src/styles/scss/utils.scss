@@ -8,14 +8,6 @@
   @return #{$result};
 }
 
-@function strip-units($data) {
-  @if $data == auto {
-    @return $data;
-  }
-
-  @return $data / ($data * 0 + 1);
-}
-
 @mixin media($type) {
   @media screen and (max-width: map-get($breakpoints, $type)) {
     @content;

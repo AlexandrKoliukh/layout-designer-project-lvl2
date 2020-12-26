@@ -10,10 +10,6 @@
   flex-wrap: wrap;
 }
 
-.shrink-0 {
-  flex-shrink: 0;
-}
-
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -52,36 +48,12 @@
   align-items: center;
 }
 
-.align-items-start {
-  align-items: flex-start;
-}
-
 .w-full {
   width: 100%;
 }
 
-.w-half {
-  width: 50%;
-}
-
 .text-center {
   text-align: center;
-}
-
-.bg-transparent {
-  background: transparent;
-}
-
-.border-1 {
-  border: 1px solid;
-}
-
-.border-2 {
-  border: 2px solid;
-}
-
-.border-4 {
-  border: 4px solid;
 }
 
 .border-radius-3 {
@@ -96,16 +68,8 @@
   border-radius: 50px;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .border-none {
   border: none;
-}
-
-.gap-50 {
-  gap: 50px;
 }
 
 .pt-50 {
@@ -120,34 +84,8 @@
   padding-bottom: px-to-rem(100px);
 }
 
-.m-auto {
-  margin: auto;
-}
-
-.mx-auto {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
+.text-size-small {
+  @include typography(12.8px, 19.2px);
 }
 
 @each $name, $color in $colors {
@@ -161,22 +99,5 @@
 
   .border-#{$name} {
     border-color: $color;
-  }
-}
-
-@each $text-class, $size-list in $font-sizes {
-  $font-size: nth($size-list, 1);
-  $line-height: nth($size-list, 2);
-
-  .text-size-#{$text-class} {
-    @include typography($font-size, $line-height);
-  }
-
-  @each $point, $value in $breakpoints {
-    .#{$point}-text-size-#{$text-class} {
-      @include media($point) {
-        @include typography($font-size, $line-height);
-      }
-    }
   }
 }

@@ -51,35 +51,44 @@ ul {
 input[type="search"] {
   @extend .bg-dark;
   @extend .border-radius-50;
-  padding: px-to-rem(5px) px-to-rem(16px);
-}
-
-h1 {
-  @extend .text-bold;
-  @extend .text-uppercase;
-  @extend .text-size-7;
-  @extend .md-text-size-4;
-  @extend .sm-text-size-3;
-}
-
-h2 {
-  @extend .text-bold;
-  @extend .text-uppercase;
-  @extend .text-size-4;
-  @extend .md-text-size-2;
-  @extend .sm-text-size-1;
-}
-
-h3 {
-  @include typography(30px, 45px);
-  font-weight: normal;
-
-  @include media(sm) {
-    @include typography(16px, 24px);
-  }
+  padding: px-to-rem(5px 16px);
 }
 
 p,
 span {
-  @extend .text-size-1;
+  @include typography(16px, 24px);
+}
+
+h1 {
+  @extend .text-uppercase;
+
+  @include typography(60px, 90px);
+
+  @include media(md) {
+    @include typography(40px, 60px);
+  }
+
+  @include media(sm) {
+    @include typography(30px, 45px);
+  }
+}
+
+h2 {
+  @extend .text-uppercase;
+
+  margin-bottom: px-to-rem(48px);
+  @include typography(38px, 75px);
+
+  @include media(sm) {
+    @include typography(18px, 27px);
+  }
+}
+
+h3 {
+  @include typography(30px, 45px);
+  font-weight: 400;
+
+  @include media(sm) {
+    @include typography(16px, 24px);
+  }
 }

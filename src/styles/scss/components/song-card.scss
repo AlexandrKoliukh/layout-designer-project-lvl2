@@ -1,0 +1,31 @@
+.song-card {
+  display: flex;
+  align-items: center;
+
+  .song-card-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  img {
+    margin-right: px-to-rem(15px);
+  }
+
+  .time {
+    @extend .text-gray;
+    @extend .text-size-small;
+    display: flex;
+    align-items: center;
+  }
+
+  .song-name {
+    @extend .text-size-small;
+    @extend .text-uppercase;
+    @extend .text-bold;
+  }
+  .author-name {
+    @extend .text-size-small;
+    @extend .text-gray;
+  }
+}

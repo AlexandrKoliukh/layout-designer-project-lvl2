@@ -13,16 +13,6 @@
     <header
       class="header header-absolute container d-flex text-gray text-size-small"
     >
-      <label class="burger-btn cursor-pointer" for="burger">
-        <img
-          src="images/burger.svg"
-          title="burger(not hamburger)"
-          alt="menu"
-          width="30"
-          height="30"
-        />
-      </label>
-      <input type="checkbox" hidden="hidden" id="burger" />
       <nav class="text-uppercase w-full d-flex">
         <div
           class="logo-main d-flex align-items-center text-white text-uppercase"
@@ -35,7 +25,9 @@
             <a href="index.html" class="text-white">Главная</a>
           </li>
           <li>Каталог</li>
-          <li><a href="artists.html">Исполнители</a></li>
+          <li>
+            <a href="artists.html">Исполнители</a>
+          </li>
           <li>Контакты</li>
         </ul>
         <input type="search" placeholder="поиск.." />
@@ -47,7 +39,7 @@
         class="container d-flex justify-content-center align-items-center flex-column text-center"
       >
         <h1>Онлайн музыка где угодно</h1>
-        <h2>без ограничений</h2>
+        <span class="main-subtitle"> без ограничений </span>
         <p class="form-describe">
           Получите доступ всего за несколько шагов. Заполните форму ниже и
           откройте мир музыки
@@ -83,52 +75,52 @@
         <div
           class="subscribe-cards-container d-flex justify-content-around flex-wrap"
         >
-          <div class="subscribe-card card-free d-flex flex-column">
-            <h3 class="card-title text-uppercase text-center">Бесплатная</h3>
-            <div class="d-flex flex-column mt-auto">
+          <div class="subscribe-card card-free">
+            <h3>Бесплатная</h3>
+            <div>
               <span class="price">
-                <span class="text-size-7">0</span>
-                <span class="text-size-3">руб.</span>
+                <span>0</span>
+                <span>руб.</span>
               </span>
-              <button class="btn border-radius-5">Оформить</button>
-              <p class="text-size-small text-center">
+              <button class="btn">Оформить</button>
+              <p class="card-description">
                 Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей
                 коллекции музыки. Присутствует реклама
               </p>
             </div>
           </div>
 
-          <div class="subscribe-card card-standard d-flex flex-column">
-            <h3 class="card-title text-uppercase text-center">Стандартная</h3>
-            <div class="d-flex flex-column mt-auto">
+          <div class="subscribe-card card-standard">
+            <h3>Стандартная</h3>
+            <div>
               <span class="price">
-                <span class="text-size-7">250</span>
-                <span class="text-size-3">руб.</span>
+                <span>250</span>
+                <span>руб.</span>
               </span>
-              <button class="btn border-radius-5">Оформить</button>
-              <p class="text-size-small text-center">
+              <button class="btn">Оформить</button>
+              <p class="card-description">
                 Оплата в месяц. Стандартный тариф предоставляет доступ ко всей
                 коллекции музыки в среднем качестве
               </p>
             </div>
           </div>
 
-          <div class="subscribe-card card-premium d-flex flex-column">
-            <h3 class="card-title text-uppercase text-center">Премиум</h3>
-            <div class="d-flex flex-column mt-auto">
+          <div class="subscribe-card card-premium">
+            <h3>Премиум</h3>
+            <div>
               <span class="price">
-                <span class="text-size-7">500</span>
-                <span class="text-size-3">руб.</span>
+                <span>500</span>
+                <span>руб.</span>
               </span>
-              <button class="btn border-radius-5">Оформить</button>
-              <p class="text-size-small text-center">
+              <button class="btn">Оформить</button>
+              <p class="card-description">
                 Оплата в месяц. Премиум тариф предоставляет доступ ко всей
                 коллекции музыки в высоком качестве.
               </p>
             </div>
           </div>
         </div>
-        <p class="text-center subscribe-section-description">
+        <p class="text-center">
           На всех тарифах возможно прослушивание музыки с мобильных устройств.
           На премиум тарифе вы можете скачать все композиции на ваше устройство
           и слушать музыку без подключения к интернету
@@ -164,9 +156,7 @@
                 <span class="author-name text-orange text-uppercase">
                   Music box
                 </span>
-                <time datetime="2020-01-17 19:00">
-                  17/01/2020
-                </time>
+                <time datetime="2020-01-17 19:00"> 17/01/2020 </time>
               </p>
               <button class="btn border-white border-radius-5">
                 К альбому
@@ -202,9 +192,7 @@
                 <span class="author-name text-orange text-uppercase">
                   Music box
                 </span>
-                <time datetime="2020-02-24 19:00">
-                  24/02/2020
-                </time>
+                <time datetime="2020-02-24 19:00"> 24/02/2020 </time>
               </p>
               <button class="btn border-white border-radius-5">
                 К альбому
@@ -225,7 +213,7 @@
               height="278"
             />
           </div>
-          <div class="text-gray mt-auto">
+          <div>
             <p>
               Воспользуйтесь нашим мобильным приложением. Оно позволит слушать
               музыку <br />
@@ -237,7 +225,9 @@
               <br />
               из нашей коллекции. Вы можете слушать музыку даже без интернета.
             </p>
-            <button class="btn bg-red border-radius-50 border-none text-white">
+            <button
+              class="btn btn-app bg-red border-radius-50 border-none text-white"
+            >
               Скачать
             </button>
           </div>
@@ -246,7 +236,9 @@
     </main>
 
     <footer class="footer">
-      <div class="container d-flex justify-content-between pb-100 flex-wrap sm-flex-column">
+      <div
+        class="container d-flex justify-content-between pb-100 flex-wrap sm-flex-column"
+      >
         <div class="footer-section">
           <div class="footer-title">О нас</div>
           <ul>

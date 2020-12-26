@@ -1,7 +1,8 @@
 .footer {
   @extend .text-gray;
-  @extend .text-size-1;
-  padding: 80px 0 50px;
+  @include typography(16px, 24px);
+
+  padding: px-to-rem(80px 0px 50px);
 
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
@@ -10,19 +11,19 @@
   }
 
   .footer-title {
-    margin-bottom: px-to-rem(16px);
     @extend .text-bold;
     @extend .text-uppercase;
     @extend .text-white;
+    margin-bottom: px-to-rem(16px);
   }
 
   & > div {
-    column-gap: 30px;
-    row-gap: 40px;
+    column-gap: px-to-rem(30px);
+    row-gap: px-to-rem(40px);
   }
 
   & > div:last-child ul {
-    column-gap: 40px;
-    row-gap: 20px;
+    column-gap: px-to-rem(40px);
+    row-gap: px-to-rem(20px);
   }
 }

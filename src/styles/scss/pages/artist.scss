@@ -3,15 +3,20 @@
     background-position: 70% 0;
   }
   height: 100vh;
+  min-height: 500px;
 
-  button {
-    width: 200px;
+  h1 {
+    margin-bottom: px-to-rem(16px);
   }
 
-  @include media(sm) {
-    button {
-      width: auto;
-    }
+  .banner-buttons {
+    gap: px-to-rem(24px);
+
+    margin-top: px-to-rem(48px);
+  }
+
+  button {
+    width: px-to-rem(200px);
   }
 }
 
@@ -19,49 +24,25 @@
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
 
-  column-gap: 60px;
-  row-gap: 25px;
-
-  .song-card {
-    .song-name {
-      @extend .text-bold;
-      @extend .text-uppercase;
-      @extend .text-size-small;
-    }
-    .author-name {
-      @extend .text-size-small;
-      @extend .text-gray;
-    }
-  }
+  column-gap: px-to-rem(50px);
+  row-gap: px-to-rem(25px);
 
   @include media(md) {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-
-    row-gap: 10px;
   }
 }
 
 .media-item-group {
-  .media-item {
-    @extend .text-size-1;
-    display: flex;
-    flex-direction: column;
-
-    max-width: 250px;
-
-    .item-title {
-      @extend .text-bold;
-    }
-  }
+  column-gap: px-to-rem(50px);
+  row-gap: px-to-rem(25px);
 
   @include media(md) {
-    justify-content: space-around;
     .media-item {
       max-width: 130px;
 
       img {
-        height: 130px;
+        height: px-to-rem(130px);
       }
     }
   }
